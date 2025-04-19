@@ -1,4 +1,4 @@
-#!user/bin/env python
+#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 # @File     : extractor.py
 # @Auther   : Zhang.Yuchen
@@ -59,7 +59,7 @@ class FrameExtractor:
             
         # Get video size
         self.video_size = (int(self.video.get(cv2.CAP_PROP_FRAME_HEIGHT)),
-                           int(self.video.get(cv2.CAP_PROP_FRAME_WIDTH))
+                           int(self.video.get(cv2.CAP_PROP_FRAME_WIDTH)))
         
         # Get video length in frames
         self.video_length = int(self.video.get(cv2.CAP_PROP_FRAME_COUNT))
